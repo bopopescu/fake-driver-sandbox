@@ -1,0 +1,41 @@
+# ifcfg-ethN script for RHEL/CentOS
+# Injected by Nova on instance boot
+
+DEVICE={{ ifc.name }}
+ONBOOT=yes
+{% if ifc.address or ifc.address_v6 %}
+BOOTPROTO=static
+{% else %}
+BOOTPROTO=dhcp
+{% endif %}
+{% if ifc.address %}
+IPADDR={{ ifc.address }}
+NETMASK={{ ifc.netmask }}
+{% endif %}
+{% if ifc.gateway %}
+GATEWAY={{ ifc.gateway }}
+{% endif %}
+{% if ifc.broadcast %}
+BROADCAST={{ ifc.broadcast }}
+{% endif %}
+{% if ifc.dns1 %}
+PEERDNS=yes
+DNS1={{ ifc.dns1 }}
+{% endif %}
+{% if ifc.dns2 %}
+PEERDNS=yes
+DNS2={{ ifc.dns2 }}
+{% endif %}
+{% if ifc.has_ipv6 %}
+IPV6INIT=yes
+{% if ifc.address_v6 %}
+IPV6ADDR={{ ifc.address_v6 }}/{{ ifc.netmask_v6 }}
+{% if ifc.gateway_v6 %}
+IPV6_DEFAULTGW={{ ifc.gateway_v6 }}
+{% endif %}
+{% else %}
+DHCPV6C=yes
+{% endif %}
+{% endif %}
+{# This empty statement forces jinja2 to append a newline #}
+{{ '' }}

@@ -1,0 +1,7 @@
+# hostname script for RHEL/CentOS
+# Injected by Nova on instance boot
+
+NETWORKING=yes
+HOSTNAME={{ hostname }}
+{# This empty statement forces jinja2 to append a newline #}
+{{ '' }}

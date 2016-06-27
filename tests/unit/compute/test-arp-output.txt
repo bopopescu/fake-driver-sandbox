@@ -1,0 +1,6 @@
+Address                  HWtype  HWaddress           Flags Mask            Iface
+10.1.10.1                ether   9c:d3:6d:c3:86:ab   C                     eth3
+10.1.10.235              ether   00:50:56:a9:3e:7e   C                     eth3
+10.1.10.12               ether   bc:ee:7b:c4:4f:d0   C                     eth3
+10.1.10.234              ether   00:50:56:a9:5a:59   C                     eth3
+10.1.10.2                ether   00:50:56:a9:a0:c2   C                     eth3

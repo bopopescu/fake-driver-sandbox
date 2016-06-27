@@ -1,0 +1,5 @@
+bridge name	bridge id		STP enabled	interfaces
+docker0		8000.000000000000	no		
+virbr0		8000.52540051bad2	yes		virbr0-nic
+							vnet0
+							vnet1

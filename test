@@ -1,0 +1,21 @@
+TEMPLATE
+
+{'instance_uuid': 7ab3a57f-738a-424a-951e-f756ed75d227, 'name': 7ab3a57f-738a-424a-951e-f756ed75d227, 'vmref': (obj){
+   value = "vm-12551"
+   _type = "VirtualMachine"
+ }, 'moref': vm-12551, 'memory_mb': 4096, 'vcpus': 2, 'power_state': 4, 'datastore': u'esx04-nfs', 'networks': [{'bridge': Management, 'ip_address': None, 'mac_address': fa:16:3e:07:e0:b8}, {'bridge': VM Network, 'ip_address': None, 'mac_address': fa:16:3e:ee:1d:77}], 'virtual_interfaces': [], 'template': {'hypervisor_type': 'vmware', 'vmware_disktype': 'preallocated', 'disk_format': 'vmdk', 'vmware_adaptertype': 'ide', 'vmware_ostype': ubuntu64Guest, 'path': [esx04-nfs] 7ab3a57f-738a-424a-951e-f756ed75d227/7ab3a57f-738a-424a-951e-f756ed75d227.vmtx, 'virtual_size': 8589934592L, 'type': 'vmdk', 'size': 8589934592L}}
+
+
+
+
+
+VM
+
+
+{'instance_uuid': 502e6f84-4fe1-dd72-fd4b-47b0a493a9d8, 'node': u'domain-c12165(Cody-Lab)', 'resourcePool': (val){
+   value = "resgroup-12166"
+   _type = "ResourcePool"
+ }, 'name': dc01.pf9labs.local, 'access_ip_v4': 172.23.101.5, 'block_device_mapping_v2': [{'guest_format': 'volume', 'boot_index': 0, 'volume_id': None, 'volume_size': None, 'image_id': None, 'snapshot_id': None, 'device_name': u'Hard_disk_1', 'source_type': 'blank', 'destination_type': 'local', 'virtual_size': 42949672960L, 'delete_on_termination': False}], 'vmref': (obj){
+   value = "vm-12176"
+   _type = "VirtualMachine"
+ }, 'memory_mb': 4096, 'vcpus': 2, 'power_state': 1, 'datastore': u'esx01-local', 'networks': [{'bridge': Management, 'ip_address': 172.23.101.5, 'mac_address': 00:50:56:ae:a7:1d}], 'virtual_interfaces': [{'bridge': '', 'port_group_label': Network adapter 1, 'mac_address': 00:50:56:ae:a7:1d}]}
